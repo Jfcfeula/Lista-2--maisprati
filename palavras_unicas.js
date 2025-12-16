@@ -1,4 +1,4 @@
-const readline = require('readline');
+const readline = require('readline-sync');
 
 let string = readline.question('Escreva o que quiser:').split(' ');
 let SemRepeticoes = [];
@@ -16,3 +16,4 @@ for (let x = 0; x < string.length; x++) {
     }
 }
 console.log(SemRepeticoes.join(' '));
+
