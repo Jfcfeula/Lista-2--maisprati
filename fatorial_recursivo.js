@@ -1,4 +1,4 @@
-const readline = require('readline');
+const readline = require('readline-sync');
 
 function fatorial(n) {
   if (n < 0) {
@@ -13,3 +13,4 @@ function fatorial(n) {
 }
 let n = readline.questionInt('Digite um número:');
 console.log(fatorial(n));
+
