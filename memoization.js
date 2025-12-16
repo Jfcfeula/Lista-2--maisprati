@@ -3,7 +3,7 @@ const readline = require('readline');
 function memoize(fn) {
     const cache = new Map();
     return function (...args) {
-        const key = JSON.stringify(args.sort()); // Inter x Grêmio = Grêmio x Inter
+        const key = JSON.stringify(args.sort());
         if (cache.has(key)) {
             console.log('(Usando cache)');
             return cache.get(key);
@@ -53,3 +53,4 @@ function perguntarPartida() {
 
 console.log('Simulador de Futebol');
 perguntarPartida();
+
