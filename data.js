@@ -1,4 +1,4 @@
-const readline = require('readline');
+const readline = require('readline-sync');
 
 function ehDataValida(dia, mes, ano) {
   if (ano < 1 || mes < 1 || mes > 12 || dia < 1) return false;
@@ -12,3 +12,4 @@ let dia = readline.questionInt('Dia: ');
 let mes = readline.questionInt('Mês: ');
 let ano = readline.questionInt('Ano: ');
 console.log(ehDataValida(dia, mes, ano));
+
