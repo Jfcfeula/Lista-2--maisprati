@@ -1,4 +1,4 @@
-const readline = require('readline');
+const readline = require('readline-sync');
 const numero = parseInt(Math.random() * 100);
 let numero_escolhido = null;
 
@@ -11,4 +11,5 @@ while (numero_escolhido !== numero) {
     } else {
         console.log('Mais alto!');
     }
+
 }
